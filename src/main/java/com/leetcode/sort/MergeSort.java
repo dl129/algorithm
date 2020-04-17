@@ -13,7 +13,7 @@ class MergeSort {
 
     public void mergeSort(int[] nums, int left, int right) {
         if (left < right) {
-            int mid = (left + right) >> 1;
+            int mid = (left + right) >>> 1;
             mergeSort(nums, left, mid);
             mergeSort(nums, mid + 1, right);
             merge(nums, left, mid, right);
